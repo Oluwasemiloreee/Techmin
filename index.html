@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techmin — Making Technology Simple</title>
+    <meta name="description"
+        content="Techmin makes technology simple for everyday Africans through practical articles, tools, and tech tips.">
+    <meta name="theme-color" content="#A0103C">
+    <link rel="shortcut icon" href="Img/TechminIcon.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Smooth Scroll Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body data-page="home">
+    <div id="navbar-container"></div>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <div class="hero-tag">
+                        MAKING TECH SIMPLE
+                    </div>
+                    <h1 class="hero-title">
+                        Tech that makes sense.
+                    </h1>
+                    <h3 class="hero-typing">
+                        <span id="typed"></span>
+                    </h3>
+
+                    <p class="hero-subtitle">
+                        Your guide to technology, tools, and building in Africa. <br>
+
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="articles.html" class="btn btn-danger btn-lg">
+                            Explore Articles
+                        </a>
+                        <a href="news.html" class="btn btn-outline-info btn-lg">
+                            Tech News Update
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <section class="featured-section" id="about">
+        <div class="container">
+            <p class="section-label">FEATURED THIS WEEK</p>
+            <div class="featured-card row align-items-center g-4">
+                <div class="col-lg-6">
+                    <div class="featured-image">
+                        <img src="Img/TechIcon.png" alt="Featured article illustration">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <p class="article-category">ARTIFICIAL INTELLIGENCE</p>
+                    <h2 class="featured-title">
+                        How You Can Use AI to Work Smarter
+                    </h2>
+                    <p class="featured-text">
+                        From saving time to making better decisions, here's how AI tools are helping Nigerians study,
+                        build,
+                        and grow faster.
+                    </p>
+                    <div class="featured-meta d-flex align-items-center justify-content-between flex-wrap gap-3">
+                        <div class="author d-flex align-items-center gap-3">
+                            <div class="author-avatar">TI</div>
+                            <div>
+                                <h6 class="mb-0">Timi Ibrahim</h6>
+                                <small>6 min read</small>
+                            </div>
+                        </div>
+                        <a href="article.html?slug=how-you-can-use-ai-to-work-smarter" class="read-link">
+                            Read article <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= LATEST ARTICLES ================= -->
+
+    <section class="latest-section" id="latest">
+        <div class="container">
+            <p class="section-label">
+                LATEST FROM TECHMIN
+            </p>
+            <div class="row g-4">
+
+                <!-- CARD 1 -->
+                <div class="col-lg-4">
+                    <article class="latest-card" data-href="article.html?slug=5-vscode-extensions-10x-productivity"
+                        tabindex="0">
+                        <span class="category-pill">
+                            WEB DEVELOPMENT
+                        </span>
+                        <h3>
+                            5 VS Code Extensions That Will 10x Your Productivity
+                        </h3>
+                        <p>
+                            Supercharge your workflow with these essential extensions every developer should have.
+                        </p>
+                        <div class="article-meta">
+                            <span>5 MIN READ</span>
+                            <span>•</span>
+                            <!-- <span>MAY 17, 2025</span> -->
+                        </div>
+                    </article>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-lg-4">
+                    <article class="latest-card"
+                        data-href="article.html?slug=best-notion-templates-for-developers-and-freelancers" tabindex="0">
+                        <span class="category-pill">
+                            PRODUCTIVITY
+                        </span>
+                        <h3>
+                            Best Notion Templates for Students and Freelancers
+                        </h3>
+                        <p>
+                            Stay organized, focused, and ahead with these free Notion templates made for real life.
+                        </p>
+                        <div class="article-meta">
+                            <span>4 MIN READ</span>
+                            <span>•</span>
+                            <!-- <span>MAY 16, 2025</span> -->
+                        </div>
+                    </article>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="col-lg-4">
+                    <article class="latest-card"
+                        data-href="article.html?slug=from-lagos-to-the-world-nigerian-startups-leading-global-innovation"
+                        tabindex="0">
+                        <span class="category-pill">
+                            NIGERIAN TECH
+                        </span>
+                        <h3>
+                            From Lagos to the World: 5 Nigerian Startups to Watch
+                        </h3>
+                        <p>
+                            These Nigerian startups are solving real problems and scaling beyond our borders.
+                        </p>
+                        <div class="article-meta">
+                            <span>6 MIN READ</span>
+                            <span>•</span>
+                            <!-- <span>MAY 15, 2025</span> -->
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TECH TIPS TICKER ================= -->
+
+    <section class="tips-ticker" id="tech-tips" aria-label="Quick technology tips">
+        <div class="ticker">
+            <div class="ticker-content">
+                <span>💡 Did you know? You can use AI to debug your code faster.</span>
+                <span class="divider">•</span>
+                <span>💡 Canva has a free background remover.</span>
+                <span class="divider">•</span>
+                <span>💡 Google has a free business email tool.</span>
+                <span class="divider">•</span>
+                <span>💡 Your phone can read text from any photo.</span>
+                <span class="divider">•</span>
+
+                <!-- Duplicate for seamless looping -->
+                <span>💡 Did you know? You can use AI to debug your code faster.</span>
+                <span class="divider">•</span>
+                <span>💡 Canva has a free background remover.</span>
+                <span class="divider">•</span>
+                <span>💡 Google has a free business email tool.</span>
+                <span class="divider">•</span>
+                <span>💡 Your phone can read text from any photo.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TOPICS ================= -->
+
+    <section class="topics-section" id="topics">
+        <div class="container text-center">
+
+            <h2 class="section-title">Explore by topic</h2>
+            <a href="articles.html?filter=ai" class="topic-pill"><i class="bi bi-cpu"></i> AI</a>
+            <a href="articles.html?filter=web" class="topic-pill"><i class="bi bi-code-slash"></i> Web Development</a>
+            <a href="articles.html?filter=productivity" class="topic-pill"><i class="bi bi-lightning-charge"></i>
+                Productivity
+                Tools</a>
+            <a href="articles.html?filter=tech" class="topic-pill"><i class="bi bi-geo-alt"></i> Tech Career</a>
+            <a href="articles.html?filter=startups" class="topic-pill"><i class="bi bi-rocket-takeoff"></i> Startups</a>
+            <a href="articles.html?filter=cybersecurity" class="topic-pill"><i class="bi bi-shield-check"></i>
+                Cybersecurity</a>
+            <a href="articles.html?filter=design" class="topic-pill"><i class="bi bi-pen"></i> Design</a>
+
+        </div>
+    </section>
+
+
+    <!-- ================= NEWSLETTER CTA ================= -->
+
+    <section class="newsletter-section" id="newsletter">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="newsletter-title">
+                        Join Tech Enthusiasts <br>
+                        learning tech every week.
+                    </h2>
+                    <div i class="benefit">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Free weekly newsletter</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Early access to updates</span>
+                    </div>
+                    <form class="newsletter-form" id="newsletter-form" novalidate><input type="text" name="website"
+                            tabindex="-1" autocomplete="off" aria-hidden="true" class="visually-hidden">
+                        <input type="email" name="email" placeholder="Enter your email address"
+                            aria-label="Email address" required>
+                        <button type="submit">Subscribe free</button>
+                    </form>
+                    <p class="form-status" id="newsletter-status" role="status" aria-live="polite"></p>
+                </div>
+
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <div class="email-card">
+                        <!-- <div class="email-logo">TECH<span>M</span>IN</div> -->
+                        <div class="email-logo"><img src="Img/TechminLogo.png" alt="" height="10"></div>
+                        <h5>This week in tech</h5>
+                        <!-- <small>May 18, 2025</small> -->
+                        <div class="email-content">
+                            <div class="ai-box">AI</div>
+                            <div class="email-lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <p>Top stories</p>
+                        <div class="email-line-long"></div>
+                        <div class="email-line-short"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SOCIAL PROOF ================= -->
+
+    <!-- <section class="social-proof" id="community">
+        <div class="container">
+
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="metric-card">
+                        <h3><span class="counter" data-target="12000">0</span>+</h3>
+                        <p><i class="bi bi-people-fill"></i> Monthly Readers</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="metric-card">
+                        <h3><span class="counter" data-target="500">0</span>+</h3>
+                        <p><i class="bi bi-file-earmark-text-fill"></i> Articles Published</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="metric-card">
+                        <h3><span class="counter" data-target="3">0</span> <span>Platforms</span></h3>
+                        <p>LinkedIn &nbsp;&nbsp; Instagram &nbsp;&nbsp; X</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section> -->
+
+    <!-- footer -->
+    <div id="footer-container"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript -->
+    <!-- Typewriter Animation -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <!-- Smooth Scroll Animation -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+
+</body>
+
+</html>

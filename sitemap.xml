@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.techmin.example/</loc></url>
+  <url><loc>https://www.techmin.example/articles</loc></url>
+  <url><loc>https://www.techmin.example/news</loc></url>
+  <url><loc>https://www.techmin.example/tech-tips</loc></url>
+  <url><loc>https://www.techmin.example/topics</loc></url>
+  <url><loc>https://www.techmin.example/community</loc></url>
+  <url><loc>https://www.techmin.example/about</loc></url>
+  <url><loc>https://www.techmin.example/contact</loc></url>
+  <url><loc>https://www.techmin.example/subscribe</loc></url>
+  <url><loc>https://www.techmin.example/privacy</loc></url>
+</urlset>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Latest African and global technology news, automatically updated from trusted publishers.">
+  <title>Latest Tech News | Techmin</title>
+  <link rel="shortcut icon" href="Img/TechminIcon.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="news">
+  <div id="navbar-container"></div>
+
+  <main>
+    <section class="news-hero">
+      <div class="news-grid-bg" aria-hidden="true"></div>
+      <div class="container position-relative">
+        <div class="row align-items-end g-4">
+          <div class="col-lg-8">
+            <span class="eyebrow"><i class="bi bi-broadcast-pin"></i> LIVE TECH NEWS</span>
+            <h1>What’s moving technology<span> <br> across Africa and the world.</span></h1>
+            <p>Fresh headlines from trusted publishers, collected automatically and linked directly to the original reports.</p>
+          </div>
+          <div class="col-lg-4">
+            <div class="news-update-card">
+              <span class="live-dot"></span>
+              <div><small>FEED STATUS</small><strong id="news-updated">Connecting to publishers…</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news-toolbar-section">
+      <div class="container">
+        <div class="news-toolbar">
+          <div class="news-search">
+            <i class="bi bi-search"></i>
+            <input id="news-search" type="search" placeholder="Search headlines, topics or publishers" aria-label="Search technology news">
+          </div>
+          <div class="news-view-toggle" role="group" aria-label="Sort news">
+            <button class="news-sort active" data-sort="latest" type="button"><i class="bi bi-clock"></i> Latest</button>
+            <button class="news-sort" data-sort="trending" type="button"><i class="bi bi-graph-up-arrow"></i> Trending</button>
+          </div>
+        </div>
+        <div class="news-filters" id="news-filters" aria-label="Filter news categories">
+          <button class="news-filter active" data-filter="All" type="button">All</button>
+          <button class="news-filter" data-filter="Africa" type="button">Africa</button>
+          <button class="news-filter" data-filter="AI" type="button">AI</button>
+          <button class="news-filter" data-filter="Startups" type="button">Startups</button>
+          <button class="news-filter" data-filter="Fintech" type="button">Fintech</button>
+          <button class="news-filter" data-filter="Cybersecurity" type="button">Cybersecurity</button>
+          <button class="news-filter" data-filter="Policy" type="button">Policy</button>
+          <button class="news-filter" data-filter="Development" type="button">Development</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="news-content-section">
+      <div class="container">
+        <div id="news-loading" class="news-state" aria-live="polite">
+          <div class="news-loader" aria-hidden="true"></div>
+          <h2>Gathering the latest stories</h2>
+          <p>Checking African and global technology publishers…</p>
+        </div>
+
+        <div id="news-error" class="news-state d-none" role="alert">
+          <i class="bi bi-cloud-slash"></i>
+          <h2>News could not load</h2>
+          <p>The publishers may be temporarily unavailable. Please try again.</p>
+          <button id="news-retry" class="btn btn-danger px-4" type="button">Try again</button>
+        </div>
+
+        <div id="news-results" class="d-none">
+          <div id="featured-news"></div>
+          <div class="news-heading-row">
+            <div><span class="section-label">LIVE FEED</span><h2 id="news-section-title">Latest technology news</h2></div>
+            <p id="news-count" aria-live="polite"></p>
+          </div>
+          <div class="row g-4" id="news-grid"></div>
+          <div class="text-center mt-5">
+            <button id="news-load-more" class="btn btn-outline-dark px-4 py-3 d-none" type="button">Load more stories</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news-source-note">
+      <div class="container">
+        <div class="source-note-inner">
+          <i class="bi bi-link-45deg"></i>
+          <div><h2>Read it from the source</h2><p>Techmin displays headlines and short feed excerpts for discovery. Every story opens the publisher’s original report in a new tab.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script src="news.js"></script>
+</body>
+</html>

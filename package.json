@@ -1,0 +1,16 @@
+{
+  "name": "techmin-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Techmin technology publication with Vercel Functions for live news, Brevo subscriptions, and contact email.",
+  "scripts": {
+    "dev": "npx vercel dev",
+    "start": "npx vercel dev"
+  },
+  "dependencies": {
+    "rss-parser": "^3.13.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
