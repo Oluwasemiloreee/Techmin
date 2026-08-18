@@ -8,7 +8,7 @@ function send(res, status, body) {
 }
 
 module.exports = async function handler(req, res) {
-  // Allow newsletter subscriptions only through POST requests.
+  // Only allow POST requests.
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST');
 
@@ -17,15 +17,15 @@ module.exports = async function handler(req, res) {
     });
   }
 
-  // Existing Brevo configuration.
+  // Brevo configuration.
   const brevoApiKey = process.env.BREVO_API_KEY;
   const brevoListId = Number(process.env.BREVO_LIST_ID);
 
-  // New Resend configuration.
+  // Resend configuration.
   const resendApiKey = process.env.RESEND_API_KEY;
   const resendSegmentId = process.env.RESEND_SEGMENT_ID;
 
-  // Brevo remains the primary subscription service.
+  // Keep Brevo as the primary subscription service.
   if (
     !brevoApiKey ||
     !Number.isInteger(brevoListId) ||
@@ -38,7 +38,7 @@ module.exports = async function handler(req, res) {
 
   const { email = '', name = '', website = '' } = req.body || {};
 
-  // Honeypot field: silently ignore automated spam submissions.
+  // Ignore automated spam submissions.
   if (website) {
     return send(res, 200, { ok: true });
   }
@@ -46,7 +46,7 @@ module.exports = async function handler(req, res) {
   const cleanEmail = String(email).trim().toLowerCase();
   const cleanName = String(name).trim().slice(0, 80);
 
-  // Confirm the email address has a valid format.
+  // Validate the subscriber's email address.
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(cleanEmail)) {
     return send(res, 400, {
       error: 'Enter a valid email address.'
@@ -54,7 +54,7 @@ module.exports = async function handler(req, res) {
   }
 
   try {
-    // 1. Add or update the subscriber in your existing Brevo list.
+    // 1. Add or update the subscriber in Brevo.
     const brevoResponse = await fetch(`${BREVO_API_URL}/contacts`, {
       method: 'POST',
 
@@ -90,18 +90,18 @@ module.exports = async function handler(req, res) {
       });
     }
 
-    // 2. Add the same subscriber to Resend and the newsletter segment.
-    //
-    // Resend errors do not break the existing Brevo subscription flow.
+    // 2. Add the subscriber to Resend.
     if (resendApiKey && resendSegmentId) {
       try {
+        const resendHeaders = {
+          Authorization: `Bearer ${resendApiKey}`,
+          'Content-Type': 'application/json'
+        };
+
         const resendResponse = await fetch(`${RESEND_API_URL}/contacts`, {
           method: 'POST',
 
-          headers: {
-            Authorization: `Bearer ${resendApiKey}`,
-            'Content-Type': 'application/json'
-          },
+          headers: resendHeaders,
 
           body: JSON.stringify({
             email: cleanEmail,
@@ -126,9 +126,39 @@ module.exports = async function handler(req, res) {
             resendResponse.status,
             details
           );
+        } else {
+          // 3. Trigger the Resend welcome-email automation.
+          const eventResponse = await fetch(
+            `${RESEND_API_URL}/events/send`,
+            {
+              method: 'POST',
+
+              headers: resendHeaders,
+
+              body: JSON.stringify({
+                event: 'newsletter.subscribed',
+                email: cleanEmail,
+
+                payload: {
+                  name: cleanName,
+                  source: 'Techmin website'
+                }
+              })
+            }
+          );
+
+          if (!eventResponse.ok) {
+            const details = await eventResponse.json().catch(() => ({}));
+
+            console.error(
+              'Resend welcome automation error:',
+              eventResponse.status,
+              details
+            );
+          }
         }
       } catch (error) {
-        console.error('Resend subscription failed:', error);
+        console.error('Resend subscription or automation failed:', error);
       }
     } else {
       console.warn(
