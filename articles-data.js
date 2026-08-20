@@ -547,9 +547,9 @@ const ARTICLES = [
     title: "UI Design Trends to Watch",
     dek: "The design trends actually shaping usable, modern digital products, not just the ones filling up design Twitter.",
     image: "Img/techm1.png",
-    author: "Oluwasemilore Adesewa .B",
+    author: "Tamar Ibrahim",
     authorInitials: "TI",
-    date: "Jul 5, 2025",
+    // date: "Jul 5, 2025",
     readTime: "3 min read",
     bodyHTML: `
       <p class="lead-copy">Design trends come and go fast, most of them fade within a year. The ones actually worth paying attention to solve a real usability problem, not just look different for a season before everyone quietly moves on to the next thing.</p>
