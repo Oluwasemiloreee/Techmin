@@ -2,8 +2,8 @@
 
 - Responsive multi-page Techmin website
 - Live RSS-powered technology news at `/api/news`
-- Brevo newsletter subscription at `/api/subscribe`
-- Brevo contact email delivery at `/api/contact`
+- Brevo/resend newsletter subscription at `/api/subscribe`
+- Brevo/resend contact email delivery at `/api/contact`
 - Search and filters on the News and Articles pages
 - Shared navbar and footer components
 - Dark mode, AOS reveal motion, and reduced-motion support
