@@ -245,7 +245,7 @@ const ARTICLES = [
     categoryLabel: "WEB DEV",
     title: "5 VS Code Extensions That Will 10x Your Productivity",
     dek: "Supercharge your workflow with these essential extensions every developer should have.",
-    image: "Img/tec8.png",
+    image: "Img/techm13.png",
     author: "Segun Odeyemi",
     authorInitials: "SO",
     // date: "May 17, 2025",
