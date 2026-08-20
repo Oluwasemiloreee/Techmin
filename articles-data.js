@@ -634,7 +634,7 @@ const ARTICLES = [
     dek: "How technology is opening new opportunities across Africa, and the tradeoff that rarely gets mentioned.",
     image: "Img/techm9.png",
     author: "OLuwasemilore Adesewa .B",
-    authorInitials: "TI",
+    authorInitials: "OAB",
     date: "Jul 1, 2025",
     readTime: "3 min read",
     bodyHTML: `
