@@ -465,8 +465,8 @@ const ARTICLES = [
     title: "Best Notion Templates for Developers and Freelancers",
     dek: "Boost your productivity and stay organized with these Notion templates, without overbuilding your setup.",
     image: "Img/Techm6.png",
-    author: "Adediwura Idunnu .B",
-    authorInitials: "AIB",
+    author: "Adediwura Idunnu",
+    authorInitials: "AI",
     // date: "Jul 9, 2025",
     readTime: "3 min read",
     bodyHTML: `
@@ -547,8 +547,8 @@ const ARTICLES = [
     title: "UI Design Trends to Watch",
     dek: "The design trends actually shaping usable, modern digital products, not just the ones filling up design Twitter.",
     image: "Img/techm1.png",
-    author: "Tamar Ibrahim",
-    authorInitials: "TI",
+    author: "Tamar Praise",
+    authorInitials: "TP",
     // date: "Jul 5, 2025",
     readTime: "3 min read",
     bodyHTML: `
