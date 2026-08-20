@@ -633,7 +633,7 @@ const ARTICLES = [
     title: "Why More Africans Are Choosing Tech Careers",
     dek: "How technology is opening new opportunities across Africa, and the tradeoff that rarely gets mentioned.",
     image: "Img/techm9.png",
-    author: "OLuwasemilore Adesewa .B",
+    author: "Oluwasemilore Adesewa .B",
     authorInitials: "OAB",
     date: "Jul 1, 2025",
     readTime: "3 min read",
