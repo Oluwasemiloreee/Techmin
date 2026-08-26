@@ -51,6 +51,35 @@ module.exports = async function handler(req, res) {
 
   const canonicalUrl = `https://www.techminhq.com/article?slug=${encodeURIComponent(article.slug)}`;
 
+  const byNewest = (a, b) => new Date(b.date) - new Date(a.date);
+  const others = ARTICLES.filter((a) => a.slug !== article.slug);
+  const sameCategory = others.filter((a) => a.category === article.category).sort(byNewest);
+  const rest = others.filter((a) => a.category !== article.category).sort(byNewest);
+  const readNext = [...sameCategory, ...rest].slice(0, 3);
+
+  const readNextHTML = readNext.length
+    ? `
+        <div class="read-next">
+          <h3>Read next</h3>
+          <div class="row g-4">
+            ${readNext
+              .map(
+                (a) => `
+              <div class="col-md-4">
+                <a class="read-next-card" href="/article?slug=${encodeURIComponent(a.slug)}">
+                  <span class="category-pill">${escapeHTML(a.categoryLabel)}</span>
+                  <h4>${escapeHTML(a.title)}</h4>
+                  <small>${escapeHTML(a.readTime)}</small>
+                </a>
+              </div>
+            `
+              )
+              .join('')}
+          </div>
+        </div>
+      `
+    : '';
+
   const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -110,6 +139,7 @@ module.exports = async function handler(req, res) {
               <button class="copy-link" aria-label="Copy article link"><i class="bi bi-link-45deg"></i></button>
             </div>
           </div>
+          ${readNextHTML}
         </div>
       </section>
     </div>
