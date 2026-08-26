@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Replace the example domain after connecting your custom domain.
-Sitemap: https://www.techmin.example/sitemap.xml
+Sitemap: https://www.techminhq.com/sitemap.xml
