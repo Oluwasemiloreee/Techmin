@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.techmin.example/</loc></url>
-  <url><loc>https://www.techmin.example/articles</loc></url>
-  <url><loc>https://www.techmin.example/news</loc></url>
-  <url><loc>https://www.techmin.example/tech-tips</loc></url>
-  <url><loc>https://www.techmin.example/topics</loc></url>
-  <url><loc>https://www.techmin.example/community</loc></url>
-  <url><loc>https://www.techmin.example/about</loc></url>
-  <url><loc>https://www.techmin.example/contact</loc></url>
-  <url><loc>https://www.techmin.example/subscribe</loc></url>
-  <url><loc>https://www.techmin.example/privacy</loc></url>
+  <url><loc>https://www.techminhq.com/</loc></url>
+  <url><loc>https://www.techminhq.com/articles</loc></url>
+  <url><loc>https://www.techminhq.com/news</loc></url>
+  <url><loc>https://www.techminhq.com/tech-tips</loc></url>
+  <url><loc>https://www.techminhq.com/topics</loc></url>
+  <url><loc>https://www.techminhq.com/community</loc></url>
+  <url><loc>https://www.techminhq.com/about</loc></url>
+  <url><loc>https://www.techminhq.com/contact</loc></url>
+  <url><loc>https://www.techminhq.com/subscribe</loc></url>
+  <url><loc>https://www.techminhq.com/privacy</loc></url>
+  <url><loc>https://www.techminhq.com/article?slug=5-ai-tools-every-developer-should-be-using</loc></url>
+  <url><loc>https://www.techminhq.com/article?slug=how-you-can-use-ai-to-work-smarter</loc></url>
+  <url><loc>https://www.techminhq.com/article?slug=can-ai-replace-developers-what-actually-changed</loc></url>
+  <url><loc>https://www.techminhq.com/article?slug=5-vscode-extensions-10x-productivity</loc></url>
+  <url><loc>https://www.techminhq.com/article?slug=how-to-build-a-portfolio-that-gets-you-hired</loc></url>
+  <url><loc>https://www.techminhq.com/article?slug=from-lagos-to-the-world-nigerian-startups-leading-global-innovation</loc></url>
+  <url><loc>https://www.techminhq.com/article?slug=deep-work-in-a-noisy-house</loc></url>
+  <url><loc>https://www.techminhq.com/article?slug=10-startup-lessons-from-african-founders</loc></url>
+  <url><loc>https://www.techminhq.com/article?slug=best-notion-templates-for-developers-and-freelancers</loc></url>
+  <url><loc>https://www.techminhq.com/article?slug=cybersecurity-basics-every-developer-must-know</loc></url>
+  <url><loc>https://www.techminhq.com/article?slug=ui-design-trends-to-watch</loc></url>
+  <url><loc>https://www.techminhq.com/article?slug=understanding-javascript-closures</loc></url>
+  <url><loc>https://www.techminhq.com/article?slug=why-more-africans-are-choosing-tech-careers</loc></url>
 </urlset>
