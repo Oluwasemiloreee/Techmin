@@ -69,35 +69,8 @@
     <section class="featured-section" id="about">
         <div class="container">
             <p class="section-label">FEATURED</p>
-            <div class="featured-card row align-items-center g-4">
-                <div class="col-lg-6">
-                    <div class="featured-image">
-                        <img src="Img/TechIcon.png" alt="Featured article illustration">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <p class="article-category">ARTIFICIAL INTELLIGENCE</p>
-                    <h2 class="featured-title">
-                        How You Can Use AI to Work Smarter
-                    </h2>
-                    <p class="featured-text">
-                        From saving time to making better decisions, here's how AI tools are helping Nigerians study,
-                        build,
-                        and grow faster.
-                    </p>
-                    <div class="featured-meta d-flex align-items-center justify-content-between flex-wrap gap-3">
-                        <div class="author d-flex align-items-center gap-3">
-                            <div class="author-avatar">TI</div>
-                            <div>
-                                <h6 class="mb-0">Timi Ibrahim</h6>
-                                <small>6 min read</small>
-                            </div>
-                        </div>
-                        <a href="article.html?slug=how-you-can-use-ai-to-work-smarter" class="read-link">
-                            Read article <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
+            <div id="featured-root">
+                <!-- Rendered by homepage.js from articles-data.js -->
             </div>
         </div>
     </section>
@@ -109,71 +82,8 @@
             <p class="section-label">
                 LATEST FROM TECHMIN
             </p>
-            <div class="row g-4">
-
-                <!-- CARD 1 -->
-                <div class="col-lg-4">
-                    <article class="latest-card" data-href="article.html?slug=5-vscode-extensions-10x-productivity"
-                        tabindex="0">
-                        <span class="category-pill">
-                            WEB DEVELOPMENT
-                        </span>
-                        <h3>
-                            5 VS Code Extensions That Will 10x Your Productivity
-                        </h3>
-                        <p>
-                            Supercharge your workflow with these essential extensions every developer should have.
-                        </p>
-                        <div class="article-meta">
-                            <span>5 MIN READ</span>
-                            <span>•</span>
-                            <!-- <span>MAY 17, 2025</span> -->
-                        </div>
-                    </article>
-                </div>
-
-                <!-- CARD 2 -->
-                <div class="col-lg-4">
-                    <article class="latest-card"
-                        data-href="article.html?slug=best-notion-templates-for-developers-and-freelancers" tabindex="0">
-                        <span class="category-pill">
-                            PRODUCTIVITY
-                        </span>
-                        <h3>
-                            Best Notion Templates for Students and Freelancers
-                        </h3>
-                        <p>
-                            Stay organized, focused, and ahead with these free Notion templates made for real life.
-                        </p>
-                        <div class="article-meta">
-                            <span>4 MIN READ</span>
-                            <span>•</span>
-                            <!-- <span>MAY 16, 2025</span> -->
-                        </div>
-                    </article>
-                </div>
-
-                <!-- CARD 3 -->
-                <div class="col-lg-4">
-                    <article class="latest-card"
-                        data-href="article.html?slug=from-lagos-to-the-world-nigerian-startups-leading-global-innovation"
-                        tabindex="0">
-                        <span class="category-pill">
-                            NIGERIAN TECH
-                        </span>
-                        <h3>
-                            From Lagos to the World: 5 Nigerian Startups to Watch
-                        </h3>
-                        <p>
-                            These Nigerian startups are solving real problems and scaling beyond our borders.
-                        </p>
-                        <div class="article-meta">
-                            <span>6 MIN READ</span>
-                            <span>•</span>
-                            <!-- <span>MAY 15, 2025</span> -->
-                        </div>
-                    </article>
-                </div>
+            <div class="row g-4" id="latest-root">
+                <!-- Rendered by homepage.js from articles-data.js -->
             </div>
         </div>
     </section>
@@ -315,7 +225,9 @@
     <!-- JavaScript -->
     <!-- Typewriter Animation -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="articles-data.js"></script>
     <script src="script.js"></script>
+    <script src="homepage.js"></script>
     <!-- Smooth Scroll Animation -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
