@@ -27,7 +27,7 @@ const ARTICLES = [
     image: "Img/techm2.png",
     author: "Oluwasemilore Adesewa .B",
     authorInitials: "OAB",
-    // date: "Jul 17, 2025",
+    date: "Jul 17, 2025",
     readTime: "6 min read",
     bodyHTML: `
       <p class="lead-copy">"AI tool for developers" used to mean autocomplete that could finish a variable name for you, and not much more than that. That's not what these tools do anymore. The five below are actually changing how working developers spend their day, not by thinking for them, but by quietly clearing out the parts of coding that never really needed a human in the first place.</p>
@@ -72,7 +72,7 @@ const ARTICLES = [
     image: "Img/techm12.png",
     author: "Timi Ibrahim",
     authorInitials: "TI",
-    // date: "May 17, 2025",
+    date: "May 17, 2025",
     readTime: "6 min read",
     bodyHTML: `
     <p>This is useful for administrators, project managers, researchers, teachers and entrepreneurs. Always review the original document before making important decisions based on an AI-generated summary.</p>
@@ -205,7 +205,7 @@ const ARTICLES = [
     image: "Img/techm11.png",
     author: "Oluwasemilore Adesewa .B",
     authorInitials: "OAB",
-    // date: "Aug 1, 2025",
+    date: "Aug 1, 2025",
     readTime: "5 min read",
     bodyHTML: `
       <p class="lead-copy">Every few months someone confidently declares that AI is about to replace developers entirely, and every few months it doesn't happen the way they predicted. The reason why is genuinely more interesting than the panic itself, and it says a lot about what the job actually is, underneath the part that's easy to automate.</p>
@@ -248,7 +248,7 @@ const ARTICLES = [
     image: "Img/techm13.png",
     author: "Segun Odeyemi",
     authorInitials: "SO",
-    // date: "May 17, 2025",
+    date: "May 17, 2025",
     readTime: "5 min read",
     bodyHTML: `
       <p class="lead-copy">Most developers use VS Code for years without touching the extension marketplace beyond a theme and a linter. That's leaving hours on the table every week. The five extensions below aren't novelties — they quietly remove friction from parts of coding that shouldn't take real thought.</p>
@@ -292,7 +292,7 @@ const ARTICLES = [
     image: "Img/Techm3.png",
     author: "Taiwo Temitayo",
     authorInitials: "TT",
-    // date: "Jul 15, 2025",
+    date: "Jul 15, 2025",
     readTime: "3 min read",
     bodyHTML: `
       <p class="lead-copy">Most developer portfolios fail for the same quiet reason. They show what got built, not what problem it actually solved. A recruiter skims for maybe fifteen seconds before deciding whether to keep reading, so the first thing they see has to earn the next fifteen.</p>
@@ -329,7 +329,7 @@ const ARTICLES = [
     image: "Img/Techm4.png",
     author: "Johnson Ojo",
     authorInitials: "JO",
-    // date: "Jul 12, 2025",
+    date: "Jul 12, 2025",
     readTime: "6 min read",
     bodyHTML: `
       <p class="lead-copy">Ten years ago, "Nigerian startup" wasn't a phrase that meant much to a global investor sitting in San Francisco or London. That's changed, and it didn't happen by accident or by luck. It happened because a handful of companies proved something specific, one thing at a time, and everyone building after them got to stand on that proof instead of starting from zero.</p>
@@ -372,7 +372,7 @@ const ARTICLES = [
     image: "Img/techm10.png",
     author: "Taiwo Temitayo",
     authorInitials: "TT",
-    // date: "Aug 1, 2025",
+    date: "Aug 1, 2025",
     readTime: "3 min read",
     bodyHTML: `
       <p class="lead-copy">Half the productivity advice out there quietly assumes you have a closed door, a silent street outside, and power that never blinks. For a lot of developers working from home here, none of that is guaranteed on a completely normal Tuesday. So the advice needs adjusting to reality, not abandoning altogether.</p>
@@ -412,7 +412,7 @@ const ARTICLES = [
     image: "Img/Techm5.png",
     author: "Timi Ibrahim",
     authorInitials: "TI",
-    // date: "Jul 10, 2025",
+    date: "Jul 10, 2025",
     readTime: "6 min read",
     bodyHTML: `
       <p class="lead-copy">Building across African markets throws problems at you that most startup advice never plans for. Patchy infrastructure, cash-first customers, rules that shift while you're mid-build. Founders on the ground end up picking up a different playbook than the one written for a founder in Palo Alto, whether they meant to or not. These ten lessons show up again and again in conversations with people actually doing the building.</p>
@@ -467,7 +467,7 @@ const ARTICLES = [
     image: "Img/Techm6.png",
     author: "Adediwura Idunnu",
     authorInitials: "AI",
-    // date: "Jul 9, 2025",
+    date: "Jul 9, 2025",
     readTime: "3 min read",
     bodyHTML: `
       <p class="lead-copy">A good Notion setup isn't about looking impressive in a screenshot someone shares online. It's about matching how you actually work, day to day, without adding more admin than the problem it's meant to solve. Here are five that come up again and again for developers juggling client work, side projects, and job hunting all at once.</p>
@@ -504,7 +504,7 @@ const ARTICLES = [
     image: "Img/Techm7.png",
     author: "Timi Ibrahim",
     authorInitials: "TI",
-    // date: "Jul 7, 2025",
+    date: "Jul 7, 2025",
     readTime: "5 min read",
     bodyHTML: `
       <p class="lead-copy">Most breaches don't come from a genius hacker running some sophisticated exploit you couldn't have predicted. They come from basics that got skipped under deadline pressure, the kind of shortcut that felt harmless at 11pm the night before launch. These are the ones worth never skipping, no matter how tight the timeline gets, and understanding why each one matters makes it far easier to actually remember to do them.</p>
@@ -549,7 +549,7 @@ const ARTICLES = [
     image: "Img/techm1.png",
     author: "Tamar Praise",
     authorInitials: "TP",
-    // date: "Jul 5, 2025",
+    date: "Jul 5, 2025",
     readTime: "3 min read",
     bodyHTML: `
       <p class="lead-copy">Design trends come and go fast, most of them fade within a year. The ones actually worth paying attention to solve a real usability problem, not just look different for a season before everyone quietly moves on to the next thing.</p>
@@ -588,7 +588,7 @@ const ARTICLES = [
     image: "Img/techm8.png",
     author: "Chukwu Emmanuel",
     authorInitials: "CE",
-    // date: "Jul 3, 2025",
+    date: "Jul 3, 2025",
     readTime: "4 min read",
     bodyHTML: `
       <p class="lead-copy">Closures trip a lot of developers up early on, not because the idea itself is hard, but because it usually gets explained with a dry, abstract definition instead of a reason to actually care. Here's the version that tends to stick, with enough examples that you'll start noticing closures everywhere in code you've already written.</p>
