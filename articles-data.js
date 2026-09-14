@@ -663,10 +663,10 @@ const ARTICLES = [
 
   // -----------------------------------------------
   {
-    slug: "why-every-language-eventually-learns-to-speak-javascript",
+    slug: "why-many-languages-eventually-learn-to-speak-javascript",
     category: "web",
     categoryLabel: "WEB DEV",
-    title: "Why Every Language Eventually Learns to Speak JavaScript",
+    title: "Why Many Languages Eventually Learn to Speak JavaScript",
     dek: "Python, Kotlin, Dart, even ancient Fortran code have all found ways to run in your browser. Here's the quiet trick making it possible, and why it matters more than ever right now.",
     image: "Img/techm14.png",
     author: "Oluwasemilore Adesewa",
