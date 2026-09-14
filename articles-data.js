@@ -633,7 +633,7 @@ const ARTICLES = [
     title: "Why More Africans Are Choosing Tech Careers",
     dek: "How technology is opening new opportunities across Africa, and the tradeoff that rarely gets mentioned.",
     image: "Img/techm9.png",
-    author: "Oluwasemilore Adesewa .B",
+    author: "Oluwasemilore Adesewa B",
     authorInitials: "OAB",
     date: "Jul 1, 2025",
     readTime: "3 min read",
@@ -644,7 +644,7 @@ const ARTICLES = [
       <p>A developer in Ibadan can now work for a company in Austin or London without ever leaving home, earning rates that reflect the global market rather than the local one. That alone turned tech from a career that essentially demanded emigration into one that pays global rates while you stay exactly where you are, near family, in a city you actually know.</p>
 
       <h2>The path in got shorter</h2>
-      <p>A four year university degree is no longer the only route into the field. Bootcamps, free structured courses, and project-based learning have compressed the distance between "interested in tech" and "actually employable," especially for web development and data roles where a strong portfolio can speak louder than a transcript.</p>
+      <p>A four-year university degree is no longer the only route into the field. Bootcamps, free structured courses, and project-based learning have compressed the distance between "interested in tech" and "actually employable," especially for web development and data roles where a strong portfolio can speak louder than a transcript.</p>
 
       <blockquote>Tech might be the one field where a strong portfolio can outweigh where you went to school.</blockquote>
 
@@ -657,6 +657,60 @@ const ARTICLES = [
       <div class="article-callout">
         <h3>Try this today</h3>
         <p>If you're considering the switch, pick one specific role, not "tech" broadly, and find one person actually doing it whose path you can study closely.</p>
+      </div>
+    `
+  },
+
+  // -----------------------------------------------
+  {
+    slug: "why-every-language-eventually-learns-to-speak-javascript",
+    category: "web",
+    categoryLabel: "WEB DEV",
+    title: "Why Every Language Eventually Learns to Speak JavaScript",
+    dek: "Python, Kotlin, Dart, even ancient Fortran code have all found ways to run in your browser. Here's the quiet trick making it possible, and why it matters more than ever right now.",
+    image: "Img/node.png",
+    author: "Oluwasemilore Adesewa",
+    authorInitials: "OA",
+    date: "Sep 14, 2026",
+    readTime: "7 min read",
+    bodyHTML: `
+      <p class="lead-copy">Here's a strange little fact about the web. No matter what language you write your code in, if it's going to run inside a browser, it eventually has to speak JavaScript. Not "prefers to." Not "works better if it does." Has to. It's the one language every browser on earth actually understands natively, and nothing you do changes that rule. So instead of fighting it, an entire generation of tools quietly picked the other option: teach everything else how to translate itself into JavaScript on the way out the door.</p>
+      <p>If that sounds like a workaround, it is. But it's also one of the most useful workarounds in modern software, and it's why you can write code in a language you actually enjoy and still ship something that runs perfectly fine in Chrome on someone's five-year-old Android phone in Lagos or Nairobi.</p>
+
+      <h2>Wait, why does it all have to become JavaScript anyway?</h2>
+      <p>Think of a browser like a very particular waiter at a restaurant who only speaks one language. You can order in whatever language you're most comfortable with, but eventually, someone has to translate that order into the one the waiter understands, or your food never arrives. JavaScript is that one language. It's been baked into every major browser since the mid 90s, and changing that now would mean rebuilding the entire web from scratch. Nobody's doing that.</p>
+      <p>So when developers wanted the safety of TypeScript, or the elegance of a language like Elm, or even just tomorrow's JavaScript features running in today's older browsers, they didn't wait for browsers to change. They built compilers, or as this specific flavor is usually called, transpilers, that quietly rewrite one language into another before it ever reaches a user's screen.</p>
+
+      <h2>Transpiling isn't the same thing as compiling, even though people mix them up</h2>
+      <p>A regular compiler takes your code and turns it into something low-level, machine code a computer's processor can run directly. A transpiler does something a little different. It takes your code and turns it into a different but still readable programming language, usually one that sits at roughly the same level of abstraction. Write TypeScript, get JavaScript out the other end. Write tomorrow's JavaScript syntax, get today's JavaScript out the other end, just older and more universally supported.</p>
+      <p>You've probably already used a transpiler without thinking about it that way. If you've ever written TypeScript, or used a modern JavaScript feature and watched it somehow still work in an older browser, a tool called Babel, or its faster modern cousin SWC, already did this exact job for you quietly in the background.</p>
+
+      <h2>It's not just JavaScript's close relatives anymore</h2>
+      <p>This is where it gets genuinely interesting, and where a lot of people's mental picture of "transpiling" is a few years out of date. It used to mean converting JavaScript-like languages into JavaScript. TypeScript into JavaScript. CoffeeScript into JavaScript, back when that was still a thing people used. Small, friendly translations between close cousins.</p>
+      <p>Today, entire ecosystems that have nothing to do with JavaScript compile down into it. Kotlin, the language a huge share of Android apps are written in, can compile straight to JavaScript through Kotlin/JS, letting teams share real business logic between their Android app and their website instead of writing the same thing twice. Dart, the language behind Flutter, compiles to JavaScript too, which is exactly how Flutter apps manage to run inside a normal browser tab. Even Python, a language that has genuinely nothing structurally in common with JavaScript, can now run client side through projects like Pyodide, which compiles the entire Python runtime down to something the browser can execute.</p>
+      <p>Somewhere in a university lab or a hobbyist's spare time, someone has probably tried compiling nearly every language you can name into JavaScript at least once. Most of those experiments never leave GitHub. A handful of them turned into tools real companies depend on daily.</p>
+
+      <h2>Why would anyone bother doing this?</h2>
+      <p>A few genuinely good reasons keep this whole approach alive, instead of everyone just learning JavaScript and calling it a day.</p>
+      <p>The first is safety. JavaScript on its own doesn't check your types, meaning it won't stop you from accidentally treating a number like text until your app is already broken in front of a real user. TypeScript adds that checking layer, catches the mistake while you're still typing, then quietly disappears into plain JavaScript once your code ships. You get the safety net during development without asking browsers to change a single thing about how they work.</p>
+      <p>The second is reuse. A company with an existing Android app written in Kotlin doesn't want to rewrite years of tested, working logic just to also have a website. Compiling that same Kotlin code down to JavaScript means one team, one shared codebase, and far fewer bugs sneaking in from two separate implementations of the same feature quietly drifting apart over time.</p>
+      <p>The third is timing. Browsers move slowly and carefully on purpose, because breaking the web for billions of people is not a mistake anyone gets to make twice. Developers, understandably, don't want to wait years for browsers to catch up before using a language feature that already makes their life easier today. Transpiling lets you write using tomorrow's tools while still shipping something that works perfectly fine in the browsers people are actually using right now.</p>
+
+      <blockquote>You're not really choosing between "the real language" and "the browser version." You're choosing which language you'd rather think in, and letting a tool handle the translation nobody wants to do by hand.</blockquote>
+
+      <h2>The trade-offs nobody mentions in the getting-started tutorial</h2>
+      <p>None of this comes completely free, and it's worth knowing the costs going in rather than discovering them the hard way at 11pm during a deploy.</p>
+      <p>Debugging gets one layer more complicated. When something breaks, you're often looking at generated JavaScript that doesn't look anything like the code you actually wrote, which is exactly why a technology called source maps exists, quietly mapping the compiled code back to your original file and line number so your browser's dev tools can still point you to the right place.</p>
+      <p>Bundle size is the other real cost. Compiling an entire language runtime into the browser, the way Pyodide does for Python, isn't free. It can mean users downloading several extra megabytes just so Python can run at all, which matters a lot more on a shaky mobile data connection than it does on fast fibre in an office building. This is exactly the kind of tradeoff worth testing on a real, throttled connection before you ship it, not just on your own fast office wifi.</p>
+      <p>And build complexity creeps in quietly. Every transpiler you add is one more tool in your build pipeline that can break, need updating, or behave differently across your team's machines. It's manageable, developers deal with this successfully every single day, but it's not nothing, and pretending otherwise is how small projects end up with build processes nobody on the team fully understands anymore.</p>
+
+      <h2>Where this is actually heading</h2>
+      <p>WebAssembly, often shortened to Wasm, is starting to take over some of the jobs transpiling used to handle alone, especially for languages like Rust or C++ that need real, close-to-the-metal performance in the browser. But WebAssembly isn't a replacement for everything transpiling does. It's a different tool suited to a different kind of problem, and honestly, the two now increasingly work alongside each other rather than competing for the same job.</p>
+      <p>What won't change anytime soon is the underlying reality this entire article is built around: JavaScript stays the one language every browser can run without asking anyone's permission first. As long as that stays true, and there's no real sign of it changing, developers are going to keep finding clever ways to write in whatever language actually suits the problem in front of them, then quietly translate it into the one language the browser has no choice but to understand.</p>
+
+      <div class="article-callout">
+        <h3>Try this today</h3>
+        <p>If you've never actually watched a transpiler work, paste a short piece of modern TypeScript into the TypeScript Playground online and toggle to see the plain JavaScript it generates. Seeing the translation happen in real time makes the whole idea click far faster than reading about it ever will.</p>
       </div>
     `
   }
