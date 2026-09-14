@@ -687,7 +687,7 @@ const ARTICLES = [
 
       <h2>It's not just JavaScript's close relatives anymore</h2>
       <p>This is where it gets genuinely interesting, and where a lot of people's mental picture of "transpiling" is a few years out of date. It used to mean converting JavaScript-like languages into JavaScript. TypeScript into JavaScript. CoffeeScript into JavaScript, back when that was still a thing people used. Small, friendly translations between close cousins.</p>
-      <p>Today, entire ecosystems that have nothing to do with JavaScript compile down into it. Kotlin, the language a huge share of Android apps are written in, can compile straight to JavaScript through Kotlin/JS, letting teams share real business logic between their Android app and their website instead of writing the same thing twice. Dart, the language behind Flutter, can compile for the web too, including to JavaScript—and newer web builds can also make use of WebAssembly.</p>
+      <p>Today, entire ecosystems that have nothing to do with JavaScript compile down into it. Kotlin, the language a huge share of Android apps are written in, can compile straight to JavaScript through Kotlin/JS, letting teams share real business logic between their Android app and their website instead of writing the same thing twice. Dart, the language behind Flutter, can compile for the web too, including to JavaScript, and newer web builds can also make use of WebAssembly.</p>
       <p>Somewhere in a university lab or a hobbyist's spare time, someone has probably tried compiling nearly every language you can name into JavaScript at least once. Most of those experiments never leave GitHub. A handful of them turned into tools real companies depend on daily.</p>
 
       <h2>Why would anyone bother doing this?</h2>
@@ -706,7 +706,7 @@ const ARTICLES = [
 
       <h2>Where this is actually heading</h2>
       <p>WebAssembly, often shortened to Wasm, is starting to take over some of the jobs transpiling used to handle alone, especially for languages like Rust or C++ that need real, close-to-the-metal performance in the browser. But WebAssembly isn't a replacement for everything transpiling does. It's a different tool suited to a different kind of problem, and honestly, the two now increasingly work alongside each other rather than competing for the same job.</p>
-      <p>What probably won't change anytime soon is JavaScript's special place on the web. It's still the web's default programming language, supported everywhere without developers needing a separate compilation target. And as long as that remains true, developers will keep finding clever ways to write in the languages that suit them best—whether that means translating their code to JavaScript or, increasingly, compiling it to WebAssembly.</p>
+      <p>What probably won't change anytime soon is JavaScript's special place on the web. It's still the web's default programming language, supported everywhere without developers needing a separate compilation target. And as long as that remains true, developers will keep finding clever ways to write in the languages that suit them best, whether that means translating their code to JavaScript or, increasingly, compiling it to WebAssembly.</p>
 
       <div class="article-callout">
         <h3>Try this today</h3>
