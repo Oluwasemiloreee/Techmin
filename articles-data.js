@@ -668,7 +668,7 @@ const ARTICLES = [
     categoryLabel: "WEB DEV",
     title: "Why Every Language Eventually Learns to Speak JavaScript",
     dek: "Python, Kotlin, Dart, even ancient Fortran code have all found ways to run in your browser. Here's the quiet trick making it possible, and why it matters more than ever right now.",
-    image: "Img/node.png",
+    image: "Img/techm14.png",
     author: "Oluwasemilore Adesewa",
     authorInitials: "OA",
     date: "Sep 14, 2026",
